@@ -1,0 +1,26 @@
+root:
+{
+    repeatBehaviour: true,
+	behaviour:
+	[
+        {shoot: {speed: 20, variables: {xPos: 0}}},   
+               
+        {wait: {duration: 0.20}}             
+	]
+},
+
+bullets:
+{
+	Default:
+	{
+		behaviour:
+		[
+    		{shift:{
+    	        x: "$xPos * 0.5",
+    	        position: "relative"
+            }}
+
+		]
+	}
+}
+

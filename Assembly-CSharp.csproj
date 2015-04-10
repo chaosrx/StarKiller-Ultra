@@ -53,11 +53,14 @@
      <Compile Include="Assets\ShipceptionEngine\Scripts\Items\Item.cs" />
      <Compile Include="Assets\ShipceptionEngine\Scripts\Items\ShipComponent.cs" />
      <Compile Include="Assets\ShipceptionEngine\Scripts\Items\UpgradeItem.cs" />
+     <Compile Include="Assets\ShipceptionEngine\Scripts\MyDanmakuContext.cs" />
      <Compile Include="Assets\ShipceptionEngine\Scripts\Ships\EnemyShip.cs" />
      <Compile Include="Assets\ShipceptionEngine\Scripts\Ships\Player.cs" />
      <Compile Include="Assets\ShipceptionEngine\Scripts\Ships\PlayerShip.cs" />
      <Compile Include="Assets\ShipceptionEngine\Scripts\Ships\Ship.cs" />
      <Compile Include="Assets\ShipceptionEngine\Scripts\Ships\SimpleMove.cs" />
+     <Compile Include="Assets\ShipceptionEngine\Scripts\StarKillerBulletCreator.cs" />
+     <Compile Include="Assets\ShipceptionEngine\Scripts\StarKillerEmitterCreator.cs" />
      <None Include="Assets\README.txt" />
      <None Include="Assets\Skyboxes\Spacebox-4096-Nebula-Collision\readme.txt" />
      <None Include="Assets\Plugins\DarkTonic\CoreGameKit\ReleaseNotes.txt" />
