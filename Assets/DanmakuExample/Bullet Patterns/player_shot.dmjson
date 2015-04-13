@@ -3,12 +3,13 @@ root:
     repeatBehaviour: true,
 	behaviour:
 	[
-        {shoot: {speed: 20, variables: {xPos: 0.5}}},                
-        {shoot: {speed: 20, variables: {xPos: -0.5}}},                
+		
+        {shoot: {speed: 20, angle: #PlayerRotation, variables: {xPos: 0.5}}},                
+        {shoot: {speed: 20, angle: #PlayerRotation, variables: {xPos: -0.5}}},                
         {wait: {duration: 0.02}},
 
-        {shoot: {speed: 20, variables: {xPos: 2}}},                
-        {shoot: {speed: 20, variables: {xPos: -2}}},                
+        {shoot: {speed: 20, angle: #PlayerRotation, variables: {xPos: 2}}},                
+        {shoot: {speed: 20, angle: #PlayerRotation, variables: {xPos: -2}}},                
         {wait: {duration: 0.07}}
 	]
 },
@@ -20,29 +21,31 @@ bullets:
 		behaviour:
 		[
     		{shift:{
-    	        x: "$xPos * 0.5",
+    	        x: "$xPos * 0.5",
     	        position: "relative"
             }},
 
     		{shift:{
-    	        x: "$xPos",
-    	        position: "relative",
-    	        duration: 0.2,
-    	        interpolation: "easeOutSine",
+    	        x: "$xPos",
+    	        position: "relative",
+    	       # duration: 0.2,
+    	       # interpolation: "easeOutSine",
                 wait: true
             }},
 
     		{shift:{
     	        x: "$xPos * -3",
     	        position: "relative",
-    	        duration: 0.4,
-    	        interpolation: "easeInOutSine",
+	        angle:#playerRotation,
+    	       duration: 0.4,
+    	       interpolation: "easeInOutSine",
                 wait: true
             }},
 
     		{shift:{
-    	        x: "$xPos * 3",
+    	        x: "$xPos * 3",
     	        position: "relative",
+	        angle:#playerRotation,
     	        duration: 0.3,
     	        interpolation: "easeInOutSine",
                 wait: true

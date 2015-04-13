@@ -3,18 +3,9 @@ using System.Collections;
 using VirtualDropkick.DanmakuEngine;
 using VirtualDropkick.DanmakuEngine.Unity;
 
-public class StarKillerBulletCreator : MonoBehaviour {
+public class StarKillerBulletCreator : DanmakuOrigin {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
+ 
     private DanmakuContext context;
 
     void Awake()
@@ -40,6 +31,10 @@ public class StarKillerBulletCreator : MonoBehaviour {
     private DanmakuBullet CreateBullet(BulletModel bulletModel)
     {
         // put your construction logic here...
+        //PoolBoss.Spawn("playerShot", new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
+        
+
+
         BulletLibrary lib = context.bulletLibrary;
         DanmakuBullet prefab = lib.GetBulletPrefab(bulletModel.Id);
         DanmakuBullet bullet = (Instantiate(prefab) as DanmakuBullet);

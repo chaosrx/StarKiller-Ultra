@@ -3,7 +3,7 @@ root:
     repeatBehaviour: true,
 	behaviour:
 	[
-        {shoot: {speed: 20, angle: #PlayerRotation, variables: {xPos: 0}}},   
+        {shoot: {speed: 20, variables: {xPos: 0}}},   
                
         {wait: {duration: 0.20}}             
 	]
@@ -16,7 +16,7 @@ bullets:
 		behaviour:
 		[
     		{shift:{
-    	        x: "$xPos",
+    	        x: "$xPos * 0.5",
     	        position: "relative"
             }}
 

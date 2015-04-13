@@ -61,6 +61,7 @@
      <Compile Include="Assets\ShipceptionEngine\Scripts\Ships\SimpleMove.cs" />
      <Compile Include="Assets\ShipceptionEngine\Scripts\StarKillerBulletCreator.cs" />
      <Compile Include="Assets\ShipceptionEngine\Scripts\StarKillerEmitterCreator.cs" />
+     <Compile Include="Assets\ShipceptionEngine\Scripts\Weapon.cs" />
      <None Include="Assets\README.txt" />
      <None Include="Assets\Skyboxes\Spacebox-4096-Nebula-Collision\readme.txt" />
      <None Include="Assets\Plugins\DarkTonic\CoreGameKit\ReleaseNotes.txt" />
