@@ -4,12 +4,12 @@ root:
 	behaviour:
 	[
 		
-        {shoot: {speed: 20, angle: #PlayerRotation, variables: {xPos: 0.5}}},                
-        {shoot: {speed: 20, angle: #PlayerRotation, variables: {xPos: -0.5}}},                
+        {shoot: {speed: 20, angle: 180, variables: {xPos: 0.5}}},                
+        {shoot: {speed: 20, angle: 180, variables: {xPos: -0.5}}},                
         {wait: {duration: 0.02}},
 
-        {shoot: {speed: 20, angle: #PlayerRotation, variables: {xPos: 2}}},                
-        {shoot: {speed: 20, angle: #PlayerRotation, variables: {xPos: -2}}},                
+        {shoot: {speed: 20, angle: 180, variables: {xPos: 2}}},                
+        {shoot: {speed: 20, angle: 180, variables: {xPos: -2}}},                
         {wait: {duration: 0.07}}
 	]
 },
